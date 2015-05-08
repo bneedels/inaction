@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -231,42 +232,51 @@
                 </div>
                 
 <!-- Dennis Plato Media -->
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal21" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/jan-steves/jan-steves-media.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Jan Steves</h4>
-                        <p class="text-muted">Iditarod Media</p>
-                    </div>
-                </div>
                 
             </div>
 
+
+
+            <!-- BEGIN: Flickity Gallery - Dennis Plato -->
+<!--            
             <div class="row">
-                <div class="gallery js-flickity">
-                  <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/ilana-jesse-bio.jpg" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/ilana-jesse-bio.jpg" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/ilana-jesse-bio.jpg" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/ilana-jesse-bio.jpg" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/ilana-jesse-bio.jpg" class="gallery-cell" />
-                  <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                <h4 class='galleryHeader' onclick='javascript:toggleDivVertically(this)'>Dennis Plato Photo Gallery</h4>
+                <div class="galleryDiv">
+                  <div class="gallery js-flickity">
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/dennis-plato.png" class="gallery-cell" />
+                  </div>
                 </div>
             </div>
+-->            
+            <!-- END: Flickity Gallery - Dennis Plato -->
+
+
+            <!-- BEGIN: Flickity Gallery - Jan Steves -->
+<!--            
+            <div class="row">
+                <h4 class='galleryHeader' onclick='javascript:toggleDivVertically(this)'>Jan Steves Photo Gallery</h4>
+                <div class="galleryDiv">
+                  <div class="gallery js-flickity">
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                    <img width="400" height="289" src="img/portfolio/jan-steves.png" class="gallery-cell" />
+                  </div>
+                </div>
+            </div>
+-->            
+            <!-- END: Flickity Gallery - Jan Steves -->
 
         </div>
     </section>
@@ -692,6 +702,18 @@ All in One Day</p>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script>
+      function toggleDivVertically(element)
+      {
+        $(element).parent().find(".galleryDiv").slideToggle("slow");
+      }
+      
+      $( document ).ready(function()
+      {
+        $(".galleryDiv").hide();
+      });
+    </script>
 
     
 </body>
